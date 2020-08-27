@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$cian_um: #111;
+$cian_tres: #222;
+$cian_dois: #333;
+$cian_quatro: #999;
+$azul_dois: #1a6e92;
+$azul_um: #3FA5D1;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+
+    body{
+        ul{
+            margin-bottom: 0px;
+        }
+
+        p{
+            margin-bottom: 0px;
+        }
+
+        h1{
+            margin-bottom: 0px; 
+        }
+
+        a{
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.standard_styled{
+    width: 100%;
+    padding: 6% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    .whats{
+        position: fixed;
+        vertical-align: middle;
+        float: left;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+//IMPORTS ESTILO NORMAL
+@import 'home/style.scss';
+
+//IMPORTS ESTILOS MOBILE
