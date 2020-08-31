@@ -1,4 +1,4 @@
-.home{
+.global{
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -436,6 +436,12 @@
                         border-radius: 50px;
                         border: solid 1px #fff;
                         margin-right: 15px;
+                        transition: all linear .1s;
+
+                        &:hover{
+                            color: $azul_um;
+                            border: solid 1px $azul_um;
+                        }
                     }
                 }
             }
@@ -533,6 +539,38 @@
             }
         }
 
-        .box_bottom{}
+        .box_bottom{
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+
+            .left_side, .right_side{
+                display: flex;
+                flex-direction: column;
+
+                h2{
+                    color: #fff;
+                    font-size: 1.2em;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .left_side{
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    li{
+                        margin-right: 15px;
+
+                        img{
+                            border-radius: 4px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
