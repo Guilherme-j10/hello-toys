@@ -442,7 +442,10 @@ main .whats {
   display: grid;
   padding: 3.5% 10%;
   grid-template-columns: 2.5fr 1fr;
-  grid-gap: 30px; }
+  grid-gap: 30px;
+  align-items: flex-start; }
+  .product_container .big_side_left, .product_container .small_side_right {
+    min-height: 50vh; }
   .product_container .big_side_left {
     width: 100%;
     background-color: #fff;
@@ -484,6 +487,9 @@ main .whats {
         align-items: center;
         flex-direction: column;
         margin-bottom: 25px; }
+        .product_container .big_side_left .location_info_product .header_info_product .brand {
+          width: 100%;
+          color: #3FA5D1; }
         .product_container .big_side_left .location_info_product .header_info_product h1 {
           font-weight: bold;
           color: #666;
@@ -496,11 +502,111 @@ main .whats {
         color: #666;
         font-weight: 300;
         line-height: 25px;
-        margin-bottom: 15px; }
+        margin-bottom: 40px; }
+      .product_container .big_side_left .location_info_product a:last-child {
+        border-bottom: none; }
       .product_container .big_side_left .location_info_product a {
+        width: 100%;
         margin-bottom: 10px;
-        color: #444; }
+        color: #444;
+        padding-bottom: 10px;
+        text-align: left;
+        border-bottom: solid 1px #ccc; }
         .product_container .big_side_left .location_info_product a:hover {
           text-decoration: underline; }
+  .product_container .small_side_right {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px; }
+    .product_container .small_side_right .price_information {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: solid 1px #ccc; }
+      .product_container .small_side_right .price_information h1 {
+        font-weight: bold;
+        color: #1a6e92; }
+      .product_container .small_side_right .price_information p {
+        font-weight: 300;
+        margin-top: 5px; }
+        .product_container .small_side_right .price_information p strong {
+          font-weight: 600;
+          color: #1a6e92; }
+      .product_container .small_side_right .price_information a {
+        color: #333;
+        font-size: 12px;
+        margin-top: 10px; }
+        .product_container .small_side_right .price_information a i {
+          margin-right: 5px; }
+        .product_container .small_side_right .price_information a:hover {
+          text-decoration: underline; }
+    .product_container .small_side_right form {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 15px; }
+      .product_container .small_side_right form label {
+        width: 100%;
+        color: #555;
+        font-weight: bold; }
+      .product_container .small_side_right form small {
+        width: 100%;
+        margin-top: 3px;
+        color: #666;
+        font-size: 12px; }
+      .product_container .small_side_right form .box_ex {
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        border: solid 1px #ccc;
+        border-radius: 5px; }
+        .product_container .small_side_right form .box_ex i {
+          color: #1a6e92;
+          margin-right: 15px; }
+        .product_container .small_side_right form .box_ex button {
+          color: #fff;
+          font-weight: 700;
+          background-color: #3FA5D1;
+          border-radius: 3px;
+          padding: 3px 12px;
+          cursor: pointer; }
+      .product_container .small_side_right form .qtd {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .product_container .small_side_right form .qtd button, .product_container .small_side_right form .qtd input {
+          padding: 6px;
+          border-radius: 3px;
+          width: 40px;
+          height: 40px;
+          text-align: center; }
+        .product_container .small_side_right form .qtd button {
+          background-color: #333;
+          color: #fff;
+          cursor: pointer;
+          font-size: 19px; }
+        .product_container .small_side_right form .qtd input {
+          background-color: #ccc;
+          margin: 0px 5px; }
+      .product_container .small_side_right form .payment_option {
+        width: 100%;
+        margin-top: 20px; }
+        .product_container .small_side_right form .payment_option button {
+          width: 100%;
+          background-color: #3FA5D1;
+          color: #fff;
+          border-radius: 3px;
+          padding: 12px;
+          cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
